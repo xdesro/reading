@@ -1,0 +1,74 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-text;
+  color: $color-base;
+  background-color: $color-contrast;
+}
+body {
+  // overflow-y: hidden;
+  height: 100vh;
+  > div {
+    height: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  padding-block-start: 4.5rem;
+  padding-block-end: 1.5rem;
+  padding-inline: 1.5rem;
+}
+
+main.home {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-rows: 1fr auto auto;
+  align-content: end;
+  max-width: $container-max;
+  height: 100%;
+  margin-inline: auto;
+  min-height: 100%;
+}
+
+.logo {
+  .home & {
+    grid-row: 2;
+    max-width: 26.5rem;
+    margin-bottom: 1.25rem;
+
+    @include screen(sm) {
+      grid-row: 3;
+      align-self: end;
+      margin-bottom: unset;
+    }
+  }
+}
+
+.books {
+  display: grid;
+  grid-auto-flow: column;
+  grid-row: 1;
+  width: 100vw;
+}
+
+.footer {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 2rem;
+  grid-row: 3;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

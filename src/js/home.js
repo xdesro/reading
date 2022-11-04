@@ -1,0 +1,18 @@
+const layoutControls = document.querySelectorAll('.layout-controls button');
+const booksList = document.querySelector('.books');
+
+layoutControls.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const currentActiveButton = document.querySelector('.layout-controls__button--active');
+    const currentActiveLayout = currentActiveButton.dataset.layout;
+
+    const newActiveButton = e.currentTarget;
+    const newActiveLayout = newActiveButton.dataset.layout;
+    currentActiveButton.classList.remove('layout-controls__button--active');
+
+    newActiveButton.classList.add('layout-controls__button--active');
+
+    booksList.classList.remove(`books--${currentActiveLayout}`);
+    booksList.classList.add(`books--${newActiveLayout}`);
+  });
+});

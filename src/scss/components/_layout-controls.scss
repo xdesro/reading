@@ -1,0 +1,20 @@
+.layout-controls {
+  display: grid;
+  row-gap: 2rem;
+  color: $color-mid;
+  position: relative;
+  z-index: 1;
+  @include screen(md) {
+    grid-auto-flow: column;
+    column-gap: 2rem;
+  }
+  &__button {
+    max-width: 1.5rem;
+    cursor: pointer;
+    &:hover,
+    &:active,
+    &--active {
+      color: $color-base;
+    }
+  }
+}

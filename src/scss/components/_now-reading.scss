@@ -1,0 +1,44 @@
+.now {
+  display: grid;
+  column-gap: 1.125rem;
+  row-gap: 0.5rem;
+  grid-template-areas: 'title cover' 'book cover';
+  max-width: 31rem;
+  text-align: right;
+  @include screen(sm) {
+    grid-template-rows: 1fr auto;
+  }
+  &__title {
+    font-size: 1rem;
+    align-self: end;
+    margin-block: unset;
+    text-transform: uppercase;
+    color: $color-mid;
+    &:before {
+      content: '(';
+    }
+    &:after {
+      content: ')';
+    }
+    @include screen(sm) {
+      font-size: 0.75rem;
+    }
+  }
+  &__book {
+    font-family: $font-display;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    text-transform: uppercase;
+    @include screen(sm) {
+      font-size: 4rem;
+    }
+  }
+  &__cover {
+    grid-area: cover;
+    align-self: end;
+    max-width: 4.5rem;
+    @include screen(sm) {
+      max-width: 10rem;
+    }
+  }
+}

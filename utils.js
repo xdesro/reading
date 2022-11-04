@@ -1,0 +1,23 @@
+export const mapRange = (value, inputMin, inputMax, outputMin, outputMax, clamp) => {
+  // Reference:
+  // https://openframeworks.cc/documentation/math/ofMath/
+  if (Math.abs(inputMin - inputMax) < Number.EPSILON) {
+    return outputMin;
+  } else {
+    var outVal = ((value - inputMin) / (inputMax - inputMin)) * (outputMax - outputMin) + outputMin;
+    if (clamp) {
+      if (outputMax < outputMin) {
+        if (outVal < outputMax) outVal = outputMax;
+        else if (outVal > outputMin) outVal = outputMin;
+      } else {
+        if (outVal > outputMax) outVal = outputMax;
+        else if (outVal < outputMin) outVal = outputMin;
+      }
+    }
+    return outVal;
+  }
+};
+
+export const clamp = (value, min, max) => {
+  return min < max ? (value < min ? min : value > max ? max : value) : value < max ? max : value > min ? min : value;
+};

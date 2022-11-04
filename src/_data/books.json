@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Betting on the Muse",
+    "author": "Charles Bukowski",
+    "coverUrl": "https://images-us.bookshop.org/ingram/9781574230017.jpg",
+    "take": "Either I'm a misogynist, or this man spittin'!",
+    "rating": 3.5,
+    "nowReading": true,
+    "colors": ["#D77050", "#90B6B6"],
+    "isbn": 9781574230017,
+    "metadata": {
+      "datePublished": "2002-05-31",
+      "buy": "https://bookshop.org/books/betting-on-the-muse/9781574230017",
+      "isbn": "1-57423-001-8"
+    }
+  },
+  {
+    "title": "Beowulf: A New Translation",
+    "author": "Maria Dahvana Headley",
+    "coverUrl": "https://images-us.bookshop.org/ingram/9780374110031.jpg",
+    "take": "This was nothing like the movie!",
+    "rating": 2.5,
+    "nowReading": false,
+    "dateCompleted": "2021-08-20",
+    "isbn": 9780374110031,
+    "colors": ["#49ABE4", "#DC4C39"],
+    "metadata": {
+      "datePublished": "2020-08-25",
+      "buy": "https://bookshop.org/books/beowulf-a-new-translation/9780374110031",
+      "isbn": "0-374-11003-4"
+    }
+  },
+  {
+    "title": "Responsible JavaScript",
+    "author": "Jeremy Wagner",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0051/7692/products/aba-cover-39_160x@3x.png",
+    "nowReading": false,
+    "rating": 5,
+    "colors": ["#ed40a9"],
+    "dateCompleted": "2021-11-21",
+    "isbn": 9781952616112,
+    "metadata": {
+      "datePublished": "2021-10-26",
+      "buy": "https://abookapart.com/products/responsible-javascript",
+      "isbn": "978-1-952616-11-2"
+    }
+  },
+  {
+    "title": "Sir Gawain and the Green Knight",
+    "author": "Simon Armitage",
+    "coverUrl": "https://images-us.bookshop.org/ingram/9780393334159.jpg",
+    "take": "Boy, it’s really just like the movie!",
+    "rating": 4,
+    "nowReading": false,
+    "dateCompleted": "2021-08-20",
+    "colors": ["#919F7A", "#32352D"],
+    "isbn": 9780393334159,
+    "metadata": {
+      "datePublished": "2008-11-01",
+      "buy": "https://bookshop.org/books/sir-gawain-and-the-green-knight-9780393334159/9780393334159",
+      "isbn": "0-393-33415-5"
+    }
+  },
+  {
+    "title": "The Transmigration of Timothy Archer",
+    "author": "Philip K. Dick",
+    "coverUrl": "https://www.lwcurrey.com/pictures/medium/153037.jpg",
+    "take": "Getting a lot of james pike vibes from this.",
+    "rating": 3.5,
+    "nowReading": false,
+    "dateCompleted": "2021-10-30",
+    "colors": ["#E25C62", "#CC8375"],
+    "isbn": 9780547572603,
+    "metadata": {
+      "datePublished": "1982",
+      "buy": "https://bookshop.org/books/the-transmigration-of-timothy-archer-3/9780547572604",
+      "isbn": "0-547-57260-3"
+    }
+  },
+  {
+    "title": "Miss Lonelyhearts",
+    "author": "Nathanael West",
+    "coverUrl": "https://images-us.bookshop.org/ingram/9780811218221.jpg",
+    "rating": 3.5,
+    "nowReading": false,
+    "dateCompleted": "2021-10-12",
+    "colors": ["#7C6C65", "#F0E2D5"],
+    "isbn": 9780811218221,
+    "metadata": {
+      "datePublished": "1933",
+      "buy": "https://bookshop.org/books/miss-lonelyhearts-the-day-of-the-locust/9780811218221",
+      "isbn": "0-547-57260-3"
+    }
+  },
+  {
+    "title": "Meditations In An Emergency",
+    "author": "Frank O'Hara",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a6/Meditations_in_an_Emergency.jpg",
+    "rating": 5,
+    "nowReading": false,
+    "isbn": 9780802134523,
+    "dateCompleted": "2021-09-25",
+    "colors": ["#6a87a9", "#8d966f"],
+    "metadata": {
+      "datePublished": "1957",
+      "buy": "https://bookshop.org/books/meditations-in-an-emergency/9780802134523",
+      "isbn": "0-8021-3452-1"
+    }
+  }
+]

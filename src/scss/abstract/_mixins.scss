@@ -1,0 +1,21 @@
+@mixin screen($breakpoint) {
+  $bk: map-get($breakpoints, $breakpoint);
+  @if $bk == null {
+    $bk: $breakpoint;
+  }
+  @media screen and (min-width: #{$bk}) {
+    @content;
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+}

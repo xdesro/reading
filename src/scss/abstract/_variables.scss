@@ -1,0 +1,18 @@
+$font-text: 'Neue Haas Grotesk', sans-serif;
+$font-display: 'Manuka', sans-serif;
+
+$color-base: #333;
+$color-mid: #6c6c6c;
+$color-contrast: #efefef;
+$color-accent: #{var(--color-accent)};
+
+$color-brand-primary: #{var(--color-brand-primary, $color-base)};
+$color-brand-secondary: #{var(--color-brand-secondary, $color-mid)};
+
+$container-max: 83.75rem;
+
+$breakpoints: (
+  sm: 56rem,
+  md: 66rem,
+  lg: 83.75rem,
+);

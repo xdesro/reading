@@ -1,0 +1,25 @@
+.nav {
+  font-size: 0.75rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+
+  text-transform: uppercase;
+  z-index: 1;
+  border-bottom: 1px solid currentColor;
+  &__inner {
+    padding: 1rem 1.5rem;
+    max-width: $container-max;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__brand {
+  }
+  &__credit {
+    color: $color-mid;
+    a {
+      color: $color-base;
+    }
+  }
+}

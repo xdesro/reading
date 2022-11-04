@@ -1,0 +1,23 @@
+{
+  "name": "books",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'sass --no-source-map --watch ./src/scss:./dist/css' 'rollup --config --watch' 'npx @11ty/eleventy --serve'",
+    "build": "sass --no-source-map ./src/scss:./dist/css && npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-vue": "^0.7.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "concurrently": "^7.5.0",
+    "rollup": "^2.79.1"
+  },
+  "dependencies": {
+    "@unseenco/taxi": "^1.1.0"
+  }
+}
