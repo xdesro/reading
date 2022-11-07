@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "coverUrl": {
+          "type": "string"
+        },
+        "take": {
+          "type": "string"
+        },
+        "rating": {
+          "type": "number"
+        },
+        "dateCompleted": {
+          "type": "string"
+        },
+        "colors": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "isbn": {
+          "type": "integer"
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "datePublished": {
+              "type": "string"
+            },
+            "buy": {
+              "type": "string"
+            },
+            "isbn": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "required": ["title", "author", "colors", "isbn"]
+    }
+  ]
+}

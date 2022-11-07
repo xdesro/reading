@@ -2,27 +2,18 @@
   <main class="home" data-taxi-view>
     <Logo class="logo--home" />
     <ol class="books">
-      <li class="book-list-item" v-for="book in booksByDate" :key="book.isbn">
-        <a class="book-list-item__link" :href="`/${slugify(book.title)}`">
-          <article>
-            <img class="book-list-item__cover" :src="`/img/${book.isbn}.jpg`" />
-            <span class="visually-hidden">{{ book.title }}</span>
-            <h1 class="book-list-item__title">{{ book.title }}</h1>
-            <p class="book-list-item__author">{{ book.author }}</p>
-            <time class="book-list-item__completed" v-if="book.dateCompleted">{{ book.dateCompleted }}</time>
-          </article>
-        </a>
-      </li>
+      <BookListItem v-for="book in booksByDate" :book="book" :key="book.isbn" />
     </ol>
     <div class="footer">
       <LayoutControls />
-      <NowReading />
+      <NowReading :list="nowReadingList" />
     </div>
     <script src="/js/home.js"></script>
   </main>
 </template>
 
 <script>
+import BookListItem from './_includes/BookListItem.vue';
 import LayoutControls from './_includes/LayoutControls.vue';
 import Logo from './_includes/Logo.vue';
 import NowReading from './_includes/NowReading.vue';
@@ -33,15 +24,21 @@ export default {
       permalink: '/index.html',
       eleventyComputed: {
         booksByDate: (data) => {
-          return [...data.books].sort((a, b) => {
-            return new Date(b.dateCompleted) - new Date(a.dateCompleted);
-          });
+          return [...data.books]
+            .sort((a, b) => {
+              return new Date(b.dateCompleted) - new Date(a.dateCompleted);
+            })
+            .filter((book) => !book.nowReading);
+        },
+        nowReadingList: (data) => {
+          return [...data.books].filter((book) => book.nowReading);
         },
       },
     };
   },
 
   components: {
+    BookListItem,
     LayoutControls,
     Logo,
     NowReading,

@@ -27,7 +27,7 @@
         <dt>Date Completed</dt>
         <dd>{{ book.dateCompleted }}</dd>
       </div>
-      <div class="meta__row">
+      <div class="meta__row" v-if="book.metadata.datePublished">
         <dt>Year Published</dt>
         <dd>{{ book.metadata.datePublished }}</dd>
       </div>
@@ -58,16 +58,18 @@ export default {
       },
       title: (data) => data.book.title,
       permalink: (data) => {
-        return `/${slugify(data.book.title, {
-          lower: true,
-          remove: /[*+~.()'"!:@]/g,
-        })}/index.html`;
+        if (!data.book.nowReading) {
+          return `/${slugify(data.book.title, {
+            lower: true,
+            remove: /[*+~.()'"!:@]/g,
+          })}/index.html`;
+        }
       },
     };
   },
   computed: {
     isBookshopLink() {
-      return this.book.metadata.buy.includes('bookshop.org');
+      return this.book.metadata?.buy?.includes('bookshop.org');
     },
   },
 };

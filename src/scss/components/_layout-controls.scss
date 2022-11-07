@@ -9,8 +9,12 @@
     column-gap: 2rem;
   }
   &__button {
+    width: 100%;
     max-width: 1.5rem;
     cursor: pointer;
+    svg {
+      width: 100%;
+    }
     &:hover,
     &:active,
     &--active {

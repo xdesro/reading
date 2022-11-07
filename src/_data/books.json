@@ -1,11 +1,52 @@
 [
   {
+    "title": "Slouching Towards Bethlehem",
+    "author": "Joan Didion",
+    "nowReading": true,
+    "isbn": 9780374531386,
+    "colors": ["#e60176", "#ea3e16", "#fee800"],
+    "metadata": { "datePublished": "" }
+  },
+  {
+    "title": "Maria Fusco: Give Up Art",
+    "author": "Maria Fusco",
+    "dateCompleted": "2022-08-05",
+    "rating": 4,
+    "colors": ["#333", "#aaa"],
+    "isbn": 9781927354254,
+    "metadata": { "datePublished": "2017-08-29", "buy": "https://new-documents.org/books/maria-fusco-give-up-art" }
+  },
+  {
+    "title": "The Year of Magical Thinking",
+    "author": "Joan Didion",
+    "dateCompleted": "2022-08-14",
+    "rating": 4,
+    "colors": ["#27577b", "#70a09e"],
+    "isbn": 9781400078431,
+    "metadata": {
+      "datePublished": "2005-09-01",
+      "buy": "https://bookshop.org/p/books/the-year-of-magical-thinking-joan-didion/16636427?ean=9781400078431"
+    }
+  },
+  {
+    "title": "My Year of Rest and Relaxation",
+    "author": "Ottessa Moshfegh",
+    "dateCompleted": "2022-08-31",
+    "rating": 3.5,
+    "colors": ["#ff4b80"],
+    "isbn": 9780525522133,
+    "metadata": {
+      "datePublished": "2019-06-25",
+      "buy": "https://bookshop.org/p/books/my-year-of-rest-and-relaxation-ottessa-moshfegh/12076965?ean=9780525522133"
+    }
+  },
+  {
     "title": "Betting on the Muse",
     "author": "Charles Bukowski",
     "coverUrl": "https://images-us.bookshop.org/ingram/9781574230017.jpg",
     "take": "Either I'm a misogynist, or this man spittin'!",
     "rating": 3.5,
-    "nowReading": true,
+    "dateCompleted": "2021-07-21",
     "colors": ["#D77050", "#90B6B6"],
     "isbn": 9781574230017,
     "metadata": {

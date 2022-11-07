@@ -5,38 +5,57 @@
   grid-template-areas: 'title cover' 'book cover';
   max-width: 31rem;
   text-align: right;
+
   @include screen(sm) {
     grid-template-rows: 1fr auto;
   }
   &__title {
     font-size: 1rem;
+    position: relative;
+    z-index: 1;
     align-self: end;
     margin-block: unset;
     text-transform: uppercase;
     color: $color-mid;
+
+    @include screen(sm) {
+      font-size: 0.75rem;
+    }
     &:before {
       content: '(';
     }
     &:after {
       content: ')';
     }
-    @include screen(sm) {
-      font-size: 0.75rem;
-    }
   }
   &__book {
     font-family: $font-display;
     font-size: 2.5rem;
     line-height: 0.8;
+    position: relative;
+    z-index: 1;
     text-transform: uppercase;
+
     @include screen(sm) {
       font-size: 4rem;
     }
   }
-  &__cover {
+  &__stack {
     grid-area: cover;
     align-self: end;
+    &:hover {
+      > li {
+        @for $i from 0 through 5 {
+          &:nth-child(#{$i}) {
+            transform: translateX(#{1rem * $i - 1rem});
+          }
+        }
+      }
+    }
+  }
+  &__cover {
     max-width: 4.5rem;
+
     @include screen(sm) {
       max-width: 10rem;
     }

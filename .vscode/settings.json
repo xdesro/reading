@@ -1,5 +1,11 @@
 {
   "editor.formatOnSave": true,
   "prettier.singleQuote": true,
-  "prettier.printWidth": 120
+  "prettier.printWidth": 120,
+  "json.schemas": [
+    {
+      "fileMatch": ["src/_data/books.json"],
+      "url": "file:/Users/henrydesroches/Sites/books/books.schema.json"
+    }
+  ]
 }
