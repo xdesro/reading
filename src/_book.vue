@@ -7,7 +7,7 @@
     <div class="book-cover">
       <img :src="`/img/${book.isbn}.jpg`" alt="" />
     </div>
-    <h1 class="book-title">
+    <h1 :class="`book-title${book.title.length > 30 ? ' book-title--small' : ''}`">
       {{ book.title }}
     </h1>
     <div class="author">{{ book.author }}</div>
@@ -56,13 +56,8 @@ export default {
         data: 'books',
         alias: 'book',
       },
+      title: (data) => data.book.title,
       permalink: (data) => {
-        console.log(
-          `/${slugify(data.book.title, {
-            lower: true,
-            remove: /[*+~.()'"!:@]/g,
-          })}/`
-        );
         return `/${slugify(data.book.title, {
           lower: true,
           remove: /[*+~.()'"!:@]/g,

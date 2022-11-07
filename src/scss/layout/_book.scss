@@ -95,6 +95,11 @@
   @include screen(lg) {
     grid-column-end: span 10;
   }
+  &--small {
+    @include screen(sm) {
+      font-size: 7rem;
+    }
+  }
 }
 
 .author {

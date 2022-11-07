@@ -2,7 +2,7 @@
   <main class="home" data-taxi-view>
     <Logo class="logo--home" />
     <ol class="books">
-      <li class="book-list-item" v-for="book in books" :key="book.isbn">
+      <li class="book-list-item" v-for="book in booksByDate" :key="book.isbn">
         <a class="book-list-item__link" :href="`/${slugify(book.title)}`">
           <article>
             <img class="book-list-item__cover" :src="`/img/${book.isbn}.jpg`" />
@@ -33,8 +33,7 @@ export default {
       permalink: '/index.html',
       eleventyComputed: {
         booksByDate: (data) => {
-          return data.books.sort((a, b) => {
-            if (!a.dateCompleted) return -1;
+          return [...data.books].sort((a, b) => {
             return new Date(b.dateCompleted) - new Date(a.dateCompleted);
           });
         },
