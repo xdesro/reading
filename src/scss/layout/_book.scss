@@ -87,7 +87,7 @@
   text-transform: uppercase;
 
   @include screen(sm) {
-    font-size: 10rem;
+    font-size: clamp(5.5rem, -2.9705882352941178rem + 15.126050420168067vw, 10rem);
     font-weight: 900;
     grid-column: 1 / span 4;
     grid-row: 1 / span 2;
@@ -98,7 +98,7 @@
   }
   &--small {
     @include screen(sm) {
-      font-size: 7rem;
+      font-size: clamp(5.9rem, 3.6801801801801814rem + 3.9639639639639626vw, 7rem);
     }
   }
 }

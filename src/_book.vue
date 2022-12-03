@@ -21,7 +21,7 @@
       </svg>
       <p>{{ book.take }}</p>
     </blockquote>
-    <Stars class="stars" :rating="book.rating" :colors="book.colors" />
+    <Stars class="stars" :rating="book.rating || 0" :colors="book.colors" />
     <dl class="meta">
       <div class="meta__row meta__row--spacer" v-if="book.dateCompleted">
         <dt>Date Completed</dt>
@@ -31,9 +31,9 @@
         <dt>Year Published</dt>
         <dd>{{ book.metadata.datePublished }}</dd>
       </div>
-      <div class="meta__row">
+      <div class="meta__row" v-if="book.isbn">
         <dt>ISBN</dt>
-        <dd>{{ book.metadata.isbn }}</dd>
+        <dd>{{ book.isbn }}</dd>
       </div>
     </dl>
     <a class="buy" :href="book.metadata.buy">Buy Now</a>

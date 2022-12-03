@@ -5,7 +5,7 @@
   "json.schemas": [
     {
       "fileMatch": ["src/_data/books.json"],
-      "url": "file:/Users/henrydesroches/Sites/books/books.schema.json"
+      "url": "file:/Users/henrydesroches/Sites/reading/books.schema.json"
     }
   ]
 }

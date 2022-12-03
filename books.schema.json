@@ -49,7 +49,7 @@
           }
         }
       },
-      "required": ["title", "author", "colors", "isbn"]
+      "required": ["title", "author", "colors", "isbn", "metadata"]
     }
   ]
 }

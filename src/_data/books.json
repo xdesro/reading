@@ -1,11 +1,34 @@
 [
   {
+    "title": "Lunch Poems",
+    "author": "Frank O’Hara",
+    "nowReading": true,
+    "isbn": 9780872860353,
+    "colors": ["#17587f", "#ca5631"],
+    "metadata": {
+      "buy": "https://bookshop.org/p/books/lunch-poems-frank-o-hara/7534547"
+    }
+  },
+  {
+    "title": "LaserWriter II",
+    "author": "Tamara Shopsin",
+    "dateCompleted": "2022-11-30",
+    "isbn": 9780374602574,
+    "colors": ["#030303", "#333333", "#eeeeee"],
+    "metadata": {
+      "datePublished": "2021-10-19",
+      "buy": "https://bookshop.org/p/books/laserwriter-ii-tamara-shopsin/17879638"
+    }
+  },
+  {
     "title": "Slouching Towards Bethlehem",
     "author": "Joan Didion",
-    "nowReading": true,
+    "dateCompleted": "2022-11-27",
     "isbn": 9780374531386,
     "colors": ["#e60176", "#ea3e16", "#fee800"],
-    "metadata": { "datePublished": "" }
+    "metadata": {
+      "buy": "https://bookshop.org/p/books/slouching-towards-bethlehem-essays-joan-didion/7333492"
+    }
   },
   {
     "title": "Maria Fusco: Give Up Art",

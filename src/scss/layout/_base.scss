@@ -37,6 +37,9 @@ main.home {
   height: 100%;
   margin-inline: auto;
   min-height: 100%;
+  @include screen(lg) {
+    padding-inline: 0;
+  }
 }
 
 .logo {
