@@ -17,9 +17,14 @@ layoutControls.forEach((button) => {
   });
 });
 
-// booksList.addEventListener('wheel', (e) => {
-//   if (e.deltaY > 30) {
-//     e.preventDefault();
-//     booksList.scrollLeft += e.deltaY;
-//   }
-// });
+booksList.addEventListener('wheel', (e) => {
+  console.log(e.deltaY, e.deltaX);
+  if (e.deltaY < -3) {
+    e.preventDefault();
+    booksList.scrollLeft -= e.deltaY;
+  }
+  if (e.deltaY > 3) {
+    e.preventDefault();
+    booksList.scrollLeft -= e.deltaY;
+  }
+});
