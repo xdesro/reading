@@ -76,6 +76,7 @@
   }
   @include screen(lg) {
     grid-column: 4 / span 7;
+    max-height: 17rem;
   }
   img {
     width: 100%;
