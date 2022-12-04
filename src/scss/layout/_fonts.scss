@@ -1,20 +1,19 @@
 @font-face {
   font-family: 'Manuka';
-  src: url('/fonts/test-manuka-bold.woff2') format('woff2');
+  src: url('/fonts/manuka-bold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Manuka';
-  src: url('/fonts/test-manuka-black.woff2') format('woff2');
+  src: url('/fonts/manuka-black.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: 'Neue Haas Grotesk';
-  src: url('/fonts/neue-haas-grotesk.woff2') format('woff2'),
-    url('/fonts/neue-haas-grotesk.woff') format('woff');
+  src: url('/fonts/neue-haas-grotesk.woff2') format('woff2'), url('/fonts/neue-haas-grotesk.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
