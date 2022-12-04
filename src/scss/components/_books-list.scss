@@ -74,12 +74,16 @@
     }
   }
   &__cover {
+    display: block;
     width: 63vw;
     max-width: 13.5rem;
     transform: translateY(1.5rem);
     transition: transform 0.2s ease;
     position: relative;
     z-index: 1;
+    img {
+      max-width: 100%;
+    }
     @include screen(sm) {
       max-width: 18.5rem;
     }
