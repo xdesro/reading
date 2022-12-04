@@ -14,6 +14,7 @@
     "author": "Tamara Shopsin",
     "dateCompleted": "2022-11-30",
     "isbn": 9780374602574,
+    "rating": 4,
     "colors": ["#030303", "#333333", "#eeeeee"],
     "metadata": {
       "datePublished": "2021-10-19",
@@ -25,6 +26,7 @@
     "author": "Joan Didion",
     "dateCompleted": "2022-11-27",
     "isbn": 9780374531386,
+    "rating": 3.5,
     "colors": ["#e60176", "#ea3e16", "#fee800"],
     "metadata": {
       "buy": "https://bookshop.org/p/books/slouching-towards-bethlehem-essays-joan-didion/7333492"
