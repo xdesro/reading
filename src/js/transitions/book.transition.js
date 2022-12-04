@@ -57,7 +57,7 @@ export default class BookTransition extends Transition {
     const bookCover = to.querySelector('.book-cover img');
     const bookTitle = to.querySelector('.book-title');
     const bookAuthor = to.querySelector('.author');
-    const bookFooterItems = to.querySelectorAll('.stars, .buy-disclaimer, .buy');
+    const bookFooterItems = to.querySelectorAll('.stars, .buy-disclaimer, .buy, .take');
     const meta = to.querySelector('.meta');
     const backLink = to.querySelector('.book-nav__return');
     const logo = to.querySelector('.book-nav__logo');

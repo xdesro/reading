@@ -8,7 +8,9 @@ export default class HomeTransition extends Transition {
    */
   onLeave({ from, trigger, done }) {
     const bookCover = from.querySelector('.book-cover img');
-    const allItems = from.querySelectorAll('.book-nav, .book-title, .author, .stars, .meta, .buy, .buy-disclaimer');
+    const allItems = from.querySelectorAll(
+      '.book-nav, .book-title, .author, .stars, .meta, .buy, .buy-disclaimer, .take'
+    );
 
     const tl = gsap.timeline({ onComplete: done });
     tl.add('start');
