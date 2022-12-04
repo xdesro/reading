@@ -5,7 +5,7 @@
       <a href="/" class="book-nav__return">Go Back.</a>
     </nav>
     <div class="book-cover">
-      <img :src="`/img/${book.isbn}.jpg`" alt="" />
+      <img :src="`/covers/${book.isbn}.jpg`" alt="" />
     </div>
     <h1 :class="`book-title${book.title.length > 30 ? ' book-title--small' : ''}`">
       {{ book.title }}
