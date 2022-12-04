@@ -15,6 +15,7 @@
     "dateCompleted": "2022-11-30",
     "isbn": 9780374602574,
     "rating": 4,
+    "take": "Nerdy and adorable! A love letter to classic Apple.",
     "colors": ["#030303", "#333333", "#eeeeee"],
     "metadata": {
       "datePublished": "2021-10-19",
@@ -27,6 +28,7 @@
     "dateCompleted": "2022-11-27",
     "isbn": 9780374531386,
     "rating": 3.5,
+    "take": "Honest! Self-aware! Patient but not cloying!",
     "colors": ["#e60176", "#ea3e16", "#fee800"],
     "metadata": {
       "buy": "https://bookshop.org/p/books/slouching-towards-bethlehem-essays-joan-didion/7333492"
@@ -46,6 +48,7 @@
     "author": "Joan Didion",
     "dateCompleted": "2022-08-14",
     "rating": 4,
+    "take": "A beautiful and refreshingly pragmatic portrait of grief.",
     "colors": ["#27577b", "#70a09e"],
     "isbn": 9781400078431,
     "metadata": {
@@ -58,6 +61,7 @@
     "author": "Ottessa Moshfegh",
     "dateCompleted": "2022-08-31",
     "rating": 3.5,
+    "take": "Just found out girls get sleepy too",
     "colors": ["#ff4b80"],
     "isbn": 9780525522133,
     "metadata": {
