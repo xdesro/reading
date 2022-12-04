@@ -40,7 +40,9 @@
     grid-column-end: span 3;
   }
   &__logo {
-    max-width: 30vw;
+    &.logo {
+      max-width: 30vw;
+    }
   }
   &__return {
     font-family: $font-display;
