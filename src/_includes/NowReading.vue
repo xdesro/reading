@@ -5,7 +5,7 @@
     <h3 class="now__book" v-else>N/A</h3>
     <ul class="now__stack" v-if="list.length">
       <li v-for="book in list" :key="book.isbn">
-        <img class="now__cover" :src="`/img/${book.isbn}.jpg`" alt="" />
+        <img class="now__cover" :src="`/covers/${book.isbn}.jpg`" alt="" />
       </li>
     </ul>
   </div>
