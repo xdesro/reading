@@ -16,3 +16,8 @@ layoutControls.forEach((button) => {
     booksList.classList.add(`books--${newActiveLayout}`);
   });
 });
+
+booksList.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  booksList.scrollLeft += e.deltaY;
+});

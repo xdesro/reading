@@ -10,17 +10,30 @@ export default class BookTransition extends Transition {
    * @param { { from: HTMLElement, trigger: string|HTMLElement|false, done: function } } props
    */
   onLeave({ from, trigger, done }) {
+    const booksList = from.querySelector('.books');
     const books = from.querySelectorAll('.book-list-item');
     const tl = gsap.timeline({ onComplete: done });
+
+    const booksListIsGrid = booksList.classList.contains('books--grid');
+    const booksListStagger = booksListIsGrid
+      ? {
+          amount: 0.1,
+          from: 'start',
+          axis: 'y',
+          grid: 'auto',
+        }
+      : 0.1;
+
     tl.add('start');
     tl.to(
       [...books].filter((book) => ScrollTrigger.isInViewport(book, 0.1, true)),
       {
-        x: window.innerWidth / 2,
+        x: !booksListIsGrid ? window.innerWidth / 2 : 0,
+        y: booksListIsGrid ? '100%' : 0,
         opacity: 0,
         duration: 0.5,
         ease: 'power4.inOut',
-        stagger: 0.1,
+        stagger: booksListStagger,
       },
       'start'
     );

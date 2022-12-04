@@ -13,7 +13,7 @@ export default class HomeTransition extends Transition {
     const tl = gsap.timeline({ onComplete: done });
     tl.add('start');
 
-    tl.to(bookCover, { y: '100%', opacity: 0, duration: 0.3 }, 'start');
+    tl.to(bookCover, { y: '100%', opacity: 0, duration: 0.5, ease: 'power4.inOut' }, 'start');
     tl.to(allItems, { opacity: 0, duration: 0.5 }, 'start');
   }
 

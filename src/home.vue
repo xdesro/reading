@@ -8,7 +8,7 @@
       <LayoutControls />
       <NowReading :list="nowReadingList" />
     </div>
-    <script src="/js/home.js"></script>
+    <script src="/js/home.js" data-taxi-reload></script>
   </main>
 </template>
 
