@@ -1,6 +1,6 @@
 <template>
   <li class="book-list-item">
-    <a class="book-list-item__link" :href="`/${slugify(book.title)}`" :id="slugify(book.title)">
+    <a class="book-list-item__link" :href="`/${bookUrl}`" :id="bookUrl">
       <article>
         <picture class="book-list-item__cover" alt="">
           <source type="image/avif" :srcset="img.avif.map((avif) => avif.srcset).join(', ')" />
@@ -19,6 +19,8 @@
 
 <script>
 import Image from '@11ty/eleventy-img';
+import slugify from 'slugify';
+
 export default {
   props: ['book'],
   async serverPrefetch() {
@@ -28,6 +30,14 @@ export default {
       formats: ['avif', 'webp', 'jpeg'],
     });
     this.img = img;
+  },
+  computed: {
+    bookUrl() {
+      return slugify(this.book.title, {
+        lower: true,
+        remove: /[*+~.()'"!:@]/g,
+      });
+    },
   },
 };
 </script>

@@ -11,6 +11,19 @@
     }
   },
   {
+    "title": "Man’s Search For Meaning",
+    "author": "Viktor Frankl",
+    "isbn": 9780807014295,
+    "rating": 4.1,
+    "take": "Perennially relevant, pragmatic, and bears a deep love of mankind.",
+    "colors": ["#c1ae74", "#dea742"],
+    "metadata": {
+      "buy": "https://bookshop.org/p/books/man-s-search-for-meaning-viktor-e-frankl/8996943",
+      "dateCompleted": "2022-12-28",
+      "datePublished": "1946"
+    }
+  },
+  {
     "title": "Lunch Poems",
     "author": "Frank O’Hara",
     "nowReading": true,

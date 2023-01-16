@@ -61,7 +61,7 @@ export default {
         if (!data.book.nowReading) {
           return `/${slugify(data.book.title, {
             lower: true,
-            remove: /[*+~.()'"!:@]/g,
+            remove: /[*+~\-.()'"!:@]/g,
           })}/index.html`;
         }
       },
