@@ -1,5 +1,16 @@
 [
   {
+    "title": "Ubik",
+    "author": "Philip K. Dick",
+    "isbn": 9788834718254,
+    "rating": 3.5,
+    "take": "Classic PKD; grapples deftly with capitalism and tech and god.",
+    "colors": ["#01a3b2", "#1c1a1d"],
+    "metadata": {
+      "buy": "https://bookshop.org/p/books/ubik-philip-k-dick/8467686?ean=9780547572291"
+    }
+  },
+  {
     "title": "Lunch Poems",
     "author": "Frank O’Hara",
     "nowReading": true,
@@ -31,7 +42,9 @@
     "take": "Honest! Self-aware! Patient but not cloying!",
     "colors": ["#e60176", "#ea3e16", "#fee800"],
     "metadata": {
-      "buy": "https://bookshop.org/p/books/slouching-towards-bethlehem-essays-joan-didion/7333492"
+      "buy": "https://bookshop.org/p/books/slouching-towards-bethlehem-essays-joan-didion/7333492",
+      "datePublished": "1969",
+      "dateCompleted": "2023-01-16"
     }
   },
   {
