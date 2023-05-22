@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Invisible Life of Addie LaRue",
+    "author": "V.E. Schwab",
+    "isbn": 9780765387561,
+    "nowReading": true,
+    "colors": ["#C6A186", "#8C8470"],
+    "metadata": {}
+  },
+  {
     "title": "Sexual Politics, Sexual Communities",
     "author": "John D’Emilio",
     "isbn": 9780226142654,
@@ -36,7 +44,6 @@
   {
     "title": "Lunch Poems",
     "author": "Frank O’Hara",
-    "nowReading": true,
     "isbn": 9780872860353,
     "colors": ["#17587f", "#ca5631"],
     "metadata": {
